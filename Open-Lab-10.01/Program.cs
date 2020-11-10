@@ -27,8 +27,8 @@ namespace Open_Lab_10._01
             book.Title = "Lord of The Rings";
             book.SetPages(300);
 
-            Console.WriteLine(book.Title);
-            Console.WriteLine(book.GetPages());
+            Console.WriteLine($"Title is: {book.Title} ");
+            Console.WriteLine($"Number of pages: {book.GetPages()} ");
 
         }
     }
