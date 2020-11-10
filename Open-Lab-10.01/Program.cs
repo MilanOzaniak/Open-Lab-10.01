@@ -10,14 +10,10 @@ namespace Open_Lab_10._01
             public string Title;
             private int Pages;
 
-            public void SetPages(int pages)
+            public int _Pages
             {
-                Pages = pages;
-            }
-
-            public int GetPages()
-            {
-                return Pages;
+                get { return Pages; }
+                set { Pages = value; }
             }
         }
 
@@ -25,11 +21,10 @@ namespace Open_Lab_10._01
         {
             Book book = new Book();
             book.Title = "Lord of The Rings";
-            book.SetPages(300);
+            book._Pages = 300;
 
             Console.WriteLine($"Title is: {book.Title} ");
-            Console.WriteLine($"Number of pages: {book.GetPages()} ");
-
+            Console.WriteLine($"Number of pages: {book._Pages} ");
         }
     }
 }
